@@ -7,36 +7,19 @@
   <meta charset="utf-8">
 
   <script src="build/tracking-min.js"></script>
-  <script src="assets/stats.min.js"></script>
 
   <style>
-  html, body{
-	  margin: 0;
-	  padding: 0;
-	  height: 100%;
-	  width: 100%;
-	}
-  #video {
-    position: fixed;
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-  }
-
-  #canvas {
-    height: 100%;
-    width: 100%;
+  html, body, video, canvas {
+    margin-left: 0px;
+    margin-top: 0px;
     position: absolute;
-	transform: translate(-50%,-50%);
-	top: 50%;
-	left: 50%;
   }
   </style>
 </head>
 <body>
 
-  <video id="video" preload autoplay loop muted></video>
-  <canvas id="canvas"></canvas>
+  <video width="800" height="900" id="video" preload autoplay loop muted></video>
+  <canvas width="800" height="900" id="canvas"></canvas>
 
   <script>
     var canvas = document.getElementById('canvas');
